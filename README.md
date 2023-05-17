@@ -1,4 +1,4 @@
-# Exp-02-Implementation-of-Half-Adder-and-Full-Adder-circuit
+# Exp-03-Implementation-of-Half-Adder-and-Full-Adder-circuit
 
 # Implementation-of-Half-Adder-and-Full-Adder-circuit
 ### AIM:
@@ -38,17 +38,44 @@ If the output is 1, then the led glows.
 Program:
 /*
 Program to design a half adder and full adder circuit and verify its truth table in quartus using Verilog programming.
-Developed by: 
-RegisterNumber:  
+Developed by: shaik sameer basha
+RegisterNumber:  212222240093
+*/
+### Half adder:
+/*
+module exp2(a,b,sum,carry);
+input a,b;
+output sum,carry;
+  xor(sum,a,b);
+  and(carry,a,b);
+endmodule
+*/
+### full adder:
+/*
+module exp3(a,b,c,sum,carry);
+input a,b,c;
+output sum,carry;
+assign sum=((a^b)^c);
+assign carry=((a&b)|(b&c)|(c&a));
+endmodule
 */
 Logic symbol & Truthtable
 RTL realization
 
 ### Output:
 ### RTL
+### half adder:
+![half adder](https://github.com/shaikSameerbasha5404/Exp-02-Implementation-of-Half-Adder-and-Full-Adder-circuit/assets/118707756/d00951b0-1f1c-4e70-923b-448ac1ede927)
+### full adder:
+![full adder](https://github.com/shaikSameerbasha5404/Exp-02-Implementation-of-Half-Adder-and-Full-Adder-circuit/assets/118707756/d070119d-b3ab-49db-b6ea-0badf77640c4)
+
 ### TIMING DIAGRAM
-
-
+![half adder diagram](https://github.com/shaikSameerbasha5404/Exp-02-Implementation-of-Half-Adder-and-Full-Adder-circuit/assets/118707756/0b705e04-dd92-4cf4-9ad3-29e0c28a5687)
+![FULL ADDER diagram](https://github.com/shaikSameerbasha5404/Exp-02-Implementation-of-Half-Adder-and-Full-Adder-circuit/assets/118707756/b3239b0e-ebc3-4107-ab08-90273c50fb3f)
 ### TRUTH TABLE 
+![tt](https://github.com/shaikSameerbasha5404/Exp-02-Implementation-of-Half-Adder-and-Full-Adder-circuit/assets/118707756/6458ddcf-bd72-44f2-8fa1-a79265551bcc)
+![tt1](https://github.com/shaikSameerbasha5404/Exp-02-Implementation-of-Half-Adder-and-Full-Adder-circuit/assets/118707756/e1bbec02-2607-4fec-816c-152fb49e1798)
+
 
 ### Result:
+Thus the Implementation of Half Adder and Full Adder circuit are studied and the truth table for different logic gates are verified.

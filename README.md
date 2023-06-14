@@ -42,23 +42,21 @@ Developed by: shaik sameer basha
 RegisterNumber:  212222240093
 */
 ### Half adder:
-/*
+```python
 module exp2(a,b,sum,carry);
 input a,b;
 output sum,carry;
   xor(sum,a,b);
   and(carry,a,b);
 endmodule
-*/
 ### full adder:
-/*
 module exp3(a,b,c,sum,carry);
 input a,b,c;
 output sum,carry;
 assign sum=((a^b)^c);
 assign carry=((a&b)|(b&c)|(c&a));
 endmodule
-*/
+```
 Logic symbol & Truthtable
 RTL realization
 
